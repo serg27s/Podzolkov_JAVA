@@ -7,34 +7,34 @@ public class Start {
 //        System.out.print("Input your number: ");
 //        String name = in.nextLine();
 //        if (theName.equals(name)) {
-//            System.out.println("ÐŸÑ€Ð¸Ð²ÐµÑ‚, Ð’ÑÑ‡ÐµÑÐ»Ð°Ð²");
+//            System.out.println("Ïðèâåò, Âÿ÷åñëàâ");
 //        }
 //        else {
 
-        System.out.print("Ð’ÐµÐ´Ð¸Ñ‚Ðµ Ñ€Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð°:>");
+        System.out.print("Âåäèòå ðàçìåð ìàññèâà:>");
         try {
             int size = in.nextInt();
 
         int[] theNumbers = new int[size];
 
-            System.out.print("Ð’ÐµÐ´Ð¸Ñ‚Ðµ ÑÐ´ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ Ð¼Ð°ÑÑÐ¸Ð²Ð°:>'");
+            System.out.println("Âåäèòå ýäåìåíòû ìàññèâà:>");
 
         for (int i = 0; i<size; i++){
 
-                System.out.println( + (i+1) + "Ð¹ ÑÐ»-Ñ‚: ");
+                System.out.println( + (i+1) + "é ýë-ò: ");
                 theNumbers[i] = in.nextInt();
             }
 
-        System.out.println("Ð­Ð»ÐµÐ¼ÐµÐ½Ñ‚Ñ‹ ÐºÑ€Ð°Ñ‚Ð½Ñ‹Ðµ 3: ");
+        System.out.println("Ýëåìåíòû êðàòíûå 3: ");
         for (int i = 0; i<size; i++){
             if (theNumbers[i]%3 == 0) {
-                System.out.println( + (i+1) + "Ð¹ ÑÐ»-Ñ‚: "+ theNumbers[i]);
+                System.out.println( + (i+1) + "é ýë-ò: "+ theNumbers[i]);
             }
 
 
         };
-        } catch (InputMismatchException e){System.out.print("ÐÐµÐºÐ¾Ñ€Ñ€ÐµÐºÑ‚Ð½Ñ‹Ðµ Ð´Ð°Ð½Ð½Ñ‹Ðµ"); System.exit(0); }
-          catch (NegativeArraySizeException e){System.out.print("Ð Ð°Ð·Ð¼ÐµÑ€ Ð¼Ð°ÑÑÐ¸Ð²Ð° Ð½Ðµ Ð¼Ð¾Ð¶ÐµÑ‚ Ð±Ñ‹Ñ‚ÑŒ Ð¾Ñ‚Ñ€Ð¸Ñ†Ð°Ñ‚ÐµÐ»ÑŒÐ½Ñ‹Ð¼"); System. exit(0); }
+        } catch (InputMismatchException e){System.out.print("Íåêîððåêòíûå äàííûå"); System.exit(0); }
+          catch (NegativeArraySizeException e){System.out.print("Ðàçìåð ìàññèâà íå ìîæåò áûòü îòðèöàòåëüíûì"); System. exit(0); }
     }
 }
 
