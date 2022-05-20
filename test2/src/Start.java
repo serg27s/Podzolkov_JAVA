@@ -2,16 +2,16 @@ import java.util.InputMismatchException;
 import java.util.Scanner;
 public class Start {
     public static void main(String[] args) {
-        String theName = "Р’СЏС‡РµСЃР»Р°РІ";
+        String theName = "Вячеслав";
         Scanner in = new Scanner(System.in);
-        System.out.print("Р’РІРµРґРёС‚Рµ РёРјСЏ: ");
+        System.out.print("Введите имя: ");
 
           String name = in.nextLine();
           if (theName.equals(name)) {
-              System.out.println("РџСЂРёРІРµС‚, Р’СЏС‡РµСЃР»Р°РІ");
+              System.out.println("Привет, Вячеслав");
           }
           else {
-              System.out.println("РќРµС‚ С‚Р°РєРѕРіРѕ РёРјРµРЅРё");
+              System.out.println("Нет такого имени");
           }
 
 

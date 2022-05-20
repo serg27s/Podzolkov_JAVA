@@ -3,16 +3,16 @@ import java.util.Scanner;
 public class Start {
     public static void main(String[] args) {
         Scanner in = new Scanner(System.in);
-        System.out.print("Input your number: ");
+        System.out.print("Введите число: ");
         try {
 
 
         int number = in.nextInt();
         if (number>7) {
-            System.out.println("РџСЂРёРІРµС‚");
+            System.out.println("Привет");
         }
 
             }
-      catch (InputMismatchException e){System.out.print("РќРµРєРѕСЂСЂРµРєС‚РЅС‹Рµ РґР°РЅРЅС‹Рµ"); System.exit(0);}
+      catch (InputMismatchException e){System.out.print("Некорректные данные"); System.exit(0);}
     }
 }

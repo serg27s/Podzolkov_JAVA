@@ -17,7 +17,7 @@ public class Start {
 
         int[] theNumbers = new int[size];
 
-            System.out.println("Ведите эдементы массива:>");
+            System.out.println("Ведите элементы массива:>");
 
         for (int i = 0; i<size; i++){
 
